@@ -4619,6 +4619,7 @@ html, body {
     padding: 14px 20px;
     font-size: 14px;
     overflow: hidden;
+    position: relative;
   }
 
   /* CTA SECTION */
