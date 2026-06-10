@@ -743,9 +743,9 @@ body, html {
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .logo {
-        left: 70px; /* adjust based on logo image width */
+        left: 70px; 
         top: 50%;
         transform: translateY(-50%);
         font-size: 14px;
@@ -753,7 +753,7 @@ body, html {
         line-height: 1.2;
         max-width: 180px;
     }
-}
+} */
 @media (max-width: 768px){
     .Logoname{
         font-size: 14px;
@@ -762,12 +762,45 @@ body, html {
         white-space: normal;
         line-height: 1.2;
     }
+    /* Logo + Name Container */
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Logo Image */
+  .logo img {
+    width: 40px;
+    height: auto;
+    display: block;
+  }
+
+  /* Logo Name */
+  .logo-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: whitesmoke;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 26px;
+    height: 3px;
+    background: whitesmoke;
+    border-radius: 2px;
+  }
 }
-
-
-
-
-
 
 
 .home-page .SVG-4 {
@@ -1798,7 +1831,7 @@ img {
   }
 
   .footer-content > * {
-    width: 100%;
+    width: 80%;
     text-align: center;
   }
 
